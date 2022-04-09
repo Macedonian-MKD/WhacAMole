@@ -1,0 +1,82 @@
+html{
+    overflow-x:hidden;
+ }
+body{
+    overflow-x: hidden;
+}
+
+.leaderborads{
+    width: 500px;
+    margin:0 auto;
+    display: flex;
+}
+
+#score{
+    margin-right: auto;
+}
+
+.grid{
+    max-width: 606px;
+    max-height: 606px;
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 auto;
+    margin-top: 2rem;
+}
+
+.square{
+    height: 200px;
+    width: 200px;
+    border:1px solid black
+}
+
+
+.mole{
+    background: url('mole.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.gameOver{
+    background-color:antiquewhite;
+    border:2px solid black;
+    width: 200px;
+    padding:2rem 3rem;
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform:translateX(-55%);
+    text-align: center;
+    font-family: fantasy;
+    display: none;
+}
+
+.btn{
+    font-family: fantasy;
+    padding:1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.gameOver.show{
+    display: block;
+}
+
+@media only screen and (max-width:700px) {
+    .leaderborads{
+        width: 80%;
+        margin:2rem;
+        margin-left: 10px;
+    }
+
+    .grid{
+        max-width: 90%;
+    }
+
+    .square{
+        max-width: 30%;
+        height: 150px;
+    }
+}
